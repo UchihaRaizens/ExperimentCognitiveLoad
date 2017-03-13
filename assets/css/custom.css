@@ -1,0 +1,35 @@
+html, body {
+	height: 100%;
+}
+
+#content-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#content-container>div {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+#options>div {
+	cursor: pointer;
+}
+
+#word {
+	padding: 30px;
+	border: 4px #AFA solid;
+	border-radius: 4px;
+}
+
+#options {
+	padding: 30px;
+}
+
+#options span {
+	margin: 2px;
+	padding: 6px;
+	cursor: pointer;
+	border: 2px solid grey;
+}
