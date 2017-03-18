@@ -224,6 +224,10 @@ var sentences = [
   }
 ]
 
+var images = [
+  '1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png', '9.png', '10.png'
+]
+
 var colorWorldsTest = [
   ['cervena','zelena','ruzova','fialova','zlta'],
   ['fialova','hneda','siva','zelena','modra'],
@@ -273,6 +277,9 @@ function answer(id) {
 }
 
 function show() {
+  img = randomize(images)[0];
+  document.body.style.backgroundImage = "url('screens/" + img + "')";
+
   word = wordsTest[group].input[sentence];
   sentence_group = sentences[group];
 
@@ -280,7 +287,7 @@ function show() {
   document.getElementById('hidden_sentence').style.display = "none";
   document.getElementById('word').innerHTML = word;
   document.getElementById('word').style.display = "block";
-  sendEvent('word_' + word);
+  sendEvent('word_' + word + '_screen_' + img);
 
   setTimeout(function() {
     document.getElementById('word').style.display = "none";

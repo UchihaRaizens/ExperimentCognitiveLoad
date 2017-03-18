@@ -21,7 +21,6 @@ function sendEventValue(token, value) {
 			success : function(response) {
 			},
 			error : function(error) {
-				console.log(error.statusText);
 			}
 		});
 	}
@@ -65,8 +64,6 @@ function start() {
 		error : function(error) {
 			console.log(error.statusText);
 			console.log(error.getResponseHeader('Header'));
-			// Log any error.
-			alert("ERROR:" + error);
 			console.log(error);
 		},
 		complete : function() {
