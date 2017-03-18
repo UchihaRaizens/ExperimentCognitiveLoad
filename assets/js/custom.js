@@ -1,23 +1,23 @@
 var wordsTest = [
   {
-    'input': ['auto','motorka','autobus','elektricka','vlak'],
-    'output': ['zemiaky','auto','vidlicka','motorka','lampa','autobus','vlasy','elektricka','mirka','vlak']
+    'input': ['auto','bylina','mama','električka','lampa'],
+    'output': ['zemiaky','auto','vidlička','bylina','lampa','mama','vlasy','električka','mirka','stránka']
   },
   {
-    'input': ['asd','motdasdorka','autasdasdobus','elekadasdtricka','asdasd'],
-    'output': ['asdad','adad','aasdasd','asdasd','laasdadsmpa','asdads','asdad','asd','miradadka','vlasadk']
+    'input': ['jablko','vlak','hruška','zajac','pero'],
+    'output': ['jablko','pero','kôň','luster','vlak','hruška','skrutka','kniha','zajac','vlasy']
   },
   {
-    'input': ['sdfs','sdfsdf','sdfsdf','sdfsfd','sdfsd'],
-    'output': ['wewre','wrewer','werwer','werwer','wewer','werwer','werwer','werwe','werwwr','werwre']
+    'input': ['stolička','kakao','plechovka','stôl','mikina'],
+    'output': ['sviečka','stolička','pohár','plechovka','hodiny','kakao','mikina','sieť','kľúč','stôl']
   },
   {
-    'input': ['423234','234234','23424','2324','2324243'],
-    'output': ['534355','345345','345345','3453453','34534553','3453455','345345','345345345','3453453','345345']
+    'input': ['šporák','mobil','mikrovlnka','paplón','škola'],
+    'output': ['mikrovlnka','ceruzka','šporák','dvere','hokej','škola','lopta','paplón','pláž','mobil']
   },
   {
-    'input': ['12312313','12312313','13123','123132','24234'],
-    'output': ['eeee','wrwrwr','werwerr','werwer','werwr','werwer','werwre','werwer','werwre','werwr']
+    'input': ['futbal','zmrzlina','obal','tenis','lyžička'],
+    'output': ['lyžička','para','futbal','poduška','hokej','zmrzlina','oliva','obal','diskteta','tenis']
   },
 ];
 
