@@ -255,12 +255,15 @@ function timer(level) {
 
 var group = 0;
 var sentence = 0;
+var points = 0;
 
 function answer(id) {
   if (id == 'x') {
     sendEvent('NO_ANSWER');
+    points += 1;
   } else if (sentences[group].data[sentence].correct == sentences[group].data[sentence].options[id]) {
     sendEvent('OK');
+    points += 3;
   } else {
     sendEvent('WRONG');
   }
@@ -271,7 +274,8 @@ function answer(id) {
     sentence = 0;
   }
   if(group == 5) {
-    sendEvent('KONIEC');
+    sendEvent('KONIEC_BODY_' + points.toString());
+    stopExperiment();
   }
   show();
 }
@@ -331,4 +335,15 @@ function runTest() {
   randomize(wordsTest);
   randomize(sentences);
   show(wordsTest[0].input[0], sentences[0]);
+}
+
+function stopExperiment() {
+  setTimeout(function() {
+    window.location.href = "end.html?points=" + points;
+  }, 1050);
+}
+
+function getPoints() {
+  var backlink = location.search.split('points=')[1];
+  document.getElementById('points').innerHTML = backlink;
 }
