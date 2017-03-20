@@ -255,6 +255,7 @@ function timer(level) {
 
 var group = 0;
 var sentence = 0;
+var results = 1;
 var points = 0;
 
 function answer(id) {
@@ -270,13 +271,21 @@ function answer(id) {
 
   sentence += 1;
   if(sentence == 5) {
-    group +=1;
-    sentence = 0;
+    showSecondary();
+  
   }
   if(group == 5) {
     sendEvent('KONIEC_BODY_' + points.toString());
     stopExperiment();
   }
+  if(results == 1) {
+    show();
+  }
+}
+
+function answerSecondaryTask() {
+  console.log("collect");
+  results = 1;
   show();
 }
 
@@ -289,6 +298,7 @@ function show() {
 
   document.getElementById('options').style.display = "none";
   document.getElementById('hidden_sentence').style.display = "none";
+  document.getElementById('secundary_task').style.display = "none";
   document.getElementById('word').innerHTML = word;
   document.getElementById('word').style.display = "block";
   sendEvent('word_' + word + '_screen_' + img);
@@ -309,7 +319,37 @@ function show() {
     document.getElementById(('option_2')).innerHTML = sentence_group.data[sentence].options[2];
     document.getElementById('options').style.display = "block";
     sendEvent('options_level_' + sentence_group.level.toString() + '_id_' + sentence_group.data[sentence].id.toString());
-  }, timer(sentence_group.level));
+  }, /*timer(sentence_group.level)*/5000);
+}
+
+function showSecondary() {
+  document.getElementById('options').style.display = "none";
+  document.getElementById('hidden_sentence').style.display = "none";
+  document.getElementById('sentence').style.display = "none";
+  document.getElementById('secundary_task').style.display = "block";
+  document.getElementById('secundary_task').style.textAlign = "left";
+  //set all options not chceked
+  var checkboxes = document.getElementsByTagName('input');
+  for (var i = 0; i < checkboxes.length; i++) {
+      if (checkboxes[i].type == 'checkbox') {
+                 checkboxes[i].checked = false;
+      }
+  }
+
+  //input posssible worlds
+  document.getElementById(('sec_option_0')).innerHTML = wordsTest[group].output[0];
+  document.getElementById(('sec_option_1')).innerHTML = wordsTest[group].output[1];
+  document.getElementById(('sec_option_2')).innerHTML = wordsTest[group].output[2];
+  document.getElementById(('sec_option_3')).innerHTML = wordsTest[group].output[3];
+  document.getElementById(('sec_option_4')).innerHTML = wordsTest[group].output[4];
+  document.getElementById(('sec_option_5')).innerHTML = wordsTest[group].output[5];
+  document.getElementById(('sec_option_6')).innerHTML = wordsTest[group].output[6];
+  document.getElementById(('sec_option_7')).innerHTML = wordsTest[group].output[7];
+  document.getElementById(('sec_option_8')).innerHTML = wordsTest[group].output[8];
+  document.getElementById(('sec_option_9')).innerHTML = wordsTest[group].output[9];
+  results = 0;
+  group +=1;
+  sentence = 0;
 }
 
 function randomize(array) {

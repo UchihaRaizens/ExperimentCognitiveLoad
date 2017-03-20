@@ -43,3 +43,14 @@ body {
 	cursor: pointer;
 	border: 2px solid grey;
 }
+#options_sec {
+	padding: 30px;
+}
+
+
+#options_sec span {
+	margin: 2px;
+	padding: 6px;
+	cursor: pointer;
+	border: 2px solid grey;
+}
