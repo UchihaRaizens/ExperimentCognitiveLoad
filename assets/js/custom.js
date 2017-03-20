@@ -284,7 +284,6 @@ function answer(id) {
 }
 
 function answerSecondaryTask() {
-  console.log("collect");
   results = 1;
   show();
 }
@@ -319,7 +318,7 @@ function show() {
     document.getElementById(('option_2')).innerHTML = sentence_group.data[sentence].options[2];
     document.getElementById('options').style.display = "block";
     sendEvent('options_level_' + sentence_group.level.toString() + '_id_' + sentence_group.data[sentence].id.toString());
-  }, /*timer(sentence_group.level)*/5000);
+  }, timer(sentence_group.level) + 2000);
 }
 
 function showSecondary() {
