@@ -17,7 +17,7 @@ var wordsTest = [
   },
   {
     'input': ['futbal','zmrzlina','obal','tenis','lyžička'],
-    'output': ['lyžička','para','futbal','poduška','hokej','zmrzlina','oliva','obal','diskteta','tenis']
+    'output': ['lyžička','para','futbal','poduška','hokej','zmrzlina','oliva','obal','disketa','tenis']
   },
 ];
 
@@ -228,16 +228,6 @@ var images = [
   '1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png', '9.png', '10.png'
 ]
 
-var colorWorldsTest = [
-  ['cervena','zelena','ruzova','fialova','zlta'],
-  ['fialova','hneda','siva','zelena','modra'],
-];
-
-var realColorsTest = [
-  ['red','green','black','purple','red'],
-  ['purple','green','blue','purple','blue'],
-];
-
 function timer(level) {
   switch(level) {
     case 1:
@@ -271,22 +261,50 @@ function answer(id) {
 
   sentence += 1;
   if(sentence == 5) {
-    showSecondary();
-  
+    showSecondary();  
   }
-  if(group == 5) {
+/*  if(group == 5) {
     sendEvent('KONIEC_BODY_' + points.toString());
     stopExperiment();
-  }
+  }*/
   if(results == 1) {
     show();
   }
 }
 
-function answerSecondaryTask() {
-  results = 1;
-  show();
+function answerReaction(id) {
+  if(id == 0) {
+    console.log('disagree');
+  } else {
+    console.log('agree');
+  }
+  //set
+  showSecondPart(); 
 }
+
+function answerSecondaryTask() {
+  //get checked words
+  var answer = 'answer_secundary';
+  var checkboxesChecked = [];
+  //get checked elements
+  for(var i=0; i<10; i++) {
+    if(document.getElementById('c'+i.toString()).checked) {
+      answer = answer.concat('_'+document.getElementById('sec_option_'+i.toString()).textContent);
+    }
+  }  
+  //send event
+  sendEvent(answer);   
+  //go next iteration   
+  results = 1;  
+
+  if(group == 5){
+    sendEvent('KONIEC_BODY_' + points.toString());
+    stopExperiment();
+  } else {
+  show(); 
+  }
+}
+
 
 function show() {
   img = randomize(images)[0];

@@ -27,7 +27,14 @@ body {
 	cursor: pointer;
 }
 
+
 #word {
+	padding: 30px;
+	border: 8px #AFA solid;
+	font-size: 40px;
+}
+
+#math_example {
 	padding: 30px;
 	border: 8px #AFA solid;
 	font-size: 40px;
@@ -47,8 +54,30 @@ body {
 	padding: 30px;
 }
 
-
 #options_sec span {
+	margin: 2px;
+	padding: 6px;
+	cursor: pointer;
+	border: 2px solid grey;
+}
+
+
+#options_reaction_time_task{
+	padding: 30px;
+}
+
+#options_reaction_time_task span {
+	margin: 2px;
+	padding: 6px;
+	cursor: pointer;
+	border: 2px solid grey;
+}
+
+#math_options {
+	padding: 30px;
+}
+
+#math_options span {
 	margin: 2px;
 	padding: 6px;
 	cursor: pointer;
