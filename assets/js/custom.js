@@ -21,6 +21,52 @@ var wordsTest = [
   },
 ];
 
+var testWordsTest = {
+    'input': ['kábel','hydina','obed','asfalt','podlaha'],
+    'output': ['fazuľa','papier','modrina','kábel','farba','asfalt','železo','hydina','obed','podlaha']
+}
+
+var testSentence = {
+  level: 0,
+  data: [
+      {
+        id: 1,
+        sentence: 'Mojím snom je byť opravárom.',
+        hidden_sentence: 'Mojím  *** je byť opravárom.',
+        options: ['snom', 'životom', 'osudom'],
+        correct: 'snom'
+      },
+      {
+        id: 2,
+        sentence: 'Aplikácia nefungovala, ako sme čakali.',
+        hidden_sentence: 'Aplikácia nefungovala, ako sme ***.',
+        options: ['dúfali', 'očakávali', 'čakali'],
+        correct: 'čakali'
+      },
+      {
+        id: 3,
+        sentence: 'Moja rodina chodieva venčiť mojich psov.',
+        hidden_sentence: 'Moja *** chodieva venčiť mojich psov.',
+        options: ['kolegyňa', 'priateľka', 'rodina'],
+        correct: 'rodina'
+      },
+      {
+        id: 4,
+        sentence: 'Stoj! Zakričal policajt na zlodeja.',
+        hidden_sentence: 'Stoj! *** policajt na zlodeja.',
+        options: ['Zakričal', 'Vykríkol', 'Zakýval'],
+        correct: 'Zakričal'
+      },
+      {
+        id: 5,
+        sentence: 'Máme málo peňazí, aj bez nich sa však vieme potešiť.',
+        hidden_sentence: 'Máme málo ***, aj bez nich sa však vieme potešiť.',
+        options: ['priateľov', 'peňazí', 'hier'],
+        correct: 'peňazí'
+      }
+    ]
+}
+
 var sentences = [
   {
     level: 1,
@@ -297,7 +343,7 @@ function answerSecondaryTask() {
   //go next iteration   
   results = 1;  
 
-  if(group == 5){
+  if(group == 6){
     sendEvent('KONIEC_BODY_' + points.toString());
     stopExperiment();
   } else {
@@ -391,6 +437,8 @@ function randomize(array) {
 function runTest() {
   randomize(wordsTest);
   randomize(sentences);
+  wordsTest.unshift(testWordsTest);
+  sentences.unshift(testSentence);
   show(wordsTest[0].input[0], sentences[0]);
 }
 
