@@ -23,43 +23,43 @@ var mathTest = [
        {
         id:4,
         math_example: '1 + 0 + 1 + 0 + 1 = ?',
-        math_options:[2,1,4,3],
+        math_options:[4,1,4,3],
         correct: 3
       },
        {
         id:5,
         math_example: '1 + 0 + 1 + 0 + 1 = ?',
-        math_options:[2,1,4,3],
+        math_options:[5,1,4,3],
         correct: 3
       },
        {
         id:6,
         math_example: '1 + 0 + 1 + 0 + 1 = ?',
-        math_options:[2,1,4,3],
+        math_options:[6,1,4,3],
         correct: 3
       },
        {
         id:7,
         math_example: '1 + 0 + 1 + 0 + 1 = ?',
-        math_options:[2,1,4,3],
+        math_options:[7,1,4,3],
         correct: 3
       },
        {
         id:8,
         math_example: '1 + 0 + 1 + 0 + 1 = ?',
-        math_options:[2,1,4,3],
+        math_options:[8,1,4,3],
         correct: 3
       },
        {
         id:9,
         math_example: '1 + 0 + 1 + 0 + 1 = ?',
-        math_options:[2,1,4,3],
+        math_options:[9,1,4,3],
         correct: 3
       },
        {
         id:10,
         math_example: 'pos?',
-        math_options:[2,1,4,3],
+        math_options:[10,1,4,3],
         correct: 3
       }
     ]
@@ -88,43 +88,43 @@ var mathTest = [
        {
         id:4,
         math_example: '1 + 2 + 3 + 4 + 5 = ?',
-        math_options:[2,1,4,3],
+        math_options:[3,1,4,3],
         correct: 3
       },
        {
         id:5,
         math_example: '1 + 2 + 3 + 4 + 5 = ?',
-        math_options:[2,1,4,3],
+        math_options:[4,1,4,3],
         correct: 3
       },
        {
         id:6,
         math_example: '1 + 2 + 3 + 4 + 5 = ?',
-        math_options:[2,1,4,3],
+        math_options:[5,1,4,3],
         correct: 3
       },
        {
         id:7,
         math_example: '1 + 2 + 3 + 4 + 5 = ?',
-        math_options:[2,1,4,3],
+        math_options:[6,1,4,3],
         correct: 3
       },
        {
         id:8,
         math_example: '1 + 2 + 3 + 4 + 5 = ?',
-        math_options:[2,1,4,3],
+        math_options:[8,1,4,3],
         correct: 3
       },
        {
         id:9,
         math_example: '1 + 2 + 3 + 4 + 5 = ?',
-        math_options:[2,1,4,3],
+        math_options:[9,1,4,3],
         correct: 3
       },
        {
         id:10,
         math_example: '1 + 2 + 3 + 4 + 5 = ?',
-        math_options:[2,1,4,3],
+        math_options:[10,1,4,3],
         correct: 3
       }
     ]
@@ -153,43 +153,43 @@ var mathTest = [
        {
         id:4,
         math_example: '1 + 3 + 5 + 8 + 10 = ?',
-        math_options:[2,1,4,3],
+        math_options:[4,1,4,3],
         correct: 3
       },
        {
         id:5,
         math_example: '1 + 3 + 5 + 8 + 10 = ?',
-        math_options:[2,1,4,3],
+        math_options:[5,1,4,3],
         correct: 3
       },
        {
         id:6,
         math_example: '1 + 3 + 5 + 8 + 10 = ?',
-        math_options:[2,1,4,3],
+        math_options:[6,1,4,3],
         correct: 3
       },
        {
         id:7,
         math_example: '1 + 3 + 5 + 8 + 10 = ?',
-        math_options:[2,1,4,3],
+        math_options:[7,1,4,3],
         correct: 3
       },
        {
         id:8,
         math_example: '1 + 3 + 5 + 8 + 10 = ?',
-        math_options:[2,1,4,3],
+        math_options:[8,1,4,3],
         correct: 3
       },
        {
         id:9,
         math_example: '1 + 3 + 5 + 8 + 10 = ?',
-        math_options:[2,1,4,3],
+        math_options:[9,1,4,3],
         correct: 3
       },
        {
         id:10,
         math_example: '1 + 3 + 5 + 8 + 10 = ?',
-        math_options:[2,1,4,3],
+        math_options:[10,1,4,3],
         correct: 3
       }
     ]
@@ -218,43 +218,43 @@ var mathTest = [
        {
         id:4,
         math_example: '5 + 10 + 15 + 13 + 1 = ?',
-        math_options:[2,1,4,3],
+        math_options:[4,1,4,3],
         correct: 3
       },
        {
         id:5,
         math_example: '5 + 10 + 15 + 13 + 1 = ?',
-        math_options:[2,1,4,3],
+        math_options:[5,1,4,3],
         correct: 3
       },
        {
         id:6,
         math_example: '5 + 10 + 15 + 13 + 1 = ?',
-        math_options:[2,1,4,3],
+        math_options:[6,1,4,3],
         correct: 3
       },
        {
         id:7,
         math_example: '5 + 10 + 15 + 13 + 1 = ?',
-        math_options:[2,1,4,3],
+        math_options:[7,1,4,3],
         correct: 3
       },
        {
         id:8,
         math_example: '5 + 10 + 15 + 13 + 1 = ?',
-        math_options:[2,1,4,3],
+        math_options:[8,1,4,3],
         correct: 3
       },
        {
         id:9,
         math_example: '5 + 10 + 15 + 13 + 1 = ?',
-        math_options:[2,1,4,3],
+        math_options:[9,1,4,3],
         correct: 3
       },
        {
         id:10,
         math_example: '5 + 10 + 15 + 13 + 1 = ?',
-        math_options:[2,1,4,3],
+        math_options:[10,1,4,3],
         correct: 3
       }
     ]
@@ -283,43 +283,43 @@ var mathTest = [
        {
         id:4,
         math_example: '100 + 1 + 0 + 1 + 1 = ?',
-        math_options:[2,1,4,3],
+        math_options:[4,1,4,3],
         correct: 3
       },
        {
         id:5,
         math_example: '100 + 1 + 0 + 1 + 1 = ?',
-        math_options:[2,1,4,3],
+        math_options:[5,1,4,3],
         correct: 3
       },
        {
         id:6,
         math_example: '100 + 1 + 0 + 1 + 1 = ?',
-        math_options:[2,1,4,3],
+        math_options:[6,1,4,3],
         correct: 3
       },
        {
         id:7,
         math_example: '100 + 1 + 0 + 1 + 1 = ?',
-        math_options:[2,1,4,3],
+        math_options:[7,1,4,3],
         correct: 3
       },
        {
         id:8,
         math_example: '100 + 1 + 0 + 1 + 1 = ?',
-        math_options:[2,1,4,3],
+        math_options:[8,1,4,3],
         correct: 3
       },
        {
         id:9,
         math_example: '100 + 1 + 0 + 1 + 1 = ?',
-        math_options:[2,1,4,3],
+        math_options:[9,1,4,3],
         correct: 3
       },
        {
         id:10,
         math_example: '100 + 1 + 0 + 1 + 1 = ?',
-        math_options:[2,1,4,3],
+        math_options:[10,1,4,3],
         correct: 3
       },
     ]
