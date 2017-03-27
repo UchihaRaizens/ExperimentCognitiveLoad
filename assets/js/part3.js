@@ -1,5 +1,70 @@
 var mathTest = [
   {
+    level: 6,
+    data:[
+      {
+        id:1,
+        math_example: '10 + 10 + 20 + 10 + 10 = ?',
+        math_options:[50,60,40,70,80],
+        correct: 60
+      },
+       {
+        id:2,
+        math_example: '20 + 10 + 30 + 40 + 10 = ?',
+        math_options:[110,100,120,130,140],
+        correct: 110
+      },
+       {
+        id:3,
+        math_example: '7 + 7 + 7 + 7 + 7 = ?',
+        math_options:[25,34,35,33,38],
+        correct: 35
+      },
+       {
+        id:4,
+        math_example: '30 + 33 + 30 + 10 + 11 = ?',
+        math_options:[124,113,103,104,114],
+        correct: 2
+      },
+       {
+        id:5,
+        math_example: '10 + 20 + 30 + 25 + 45 = ?',
+        math_options:[145,135,125,130,120],
+        correct: 130
+      },
+       {
+        id:6,
+        math_example: '50 + 50 + 10 + 15 + 25 = ?',
+        math_options:[150,130,140,145,135],
+        correct: 150
+      },
+       {
+        id:7,
+        math_example: '5 + 5 + 5 + 5 + 5 = ?',
+        math_options:[34,21,24,35,25],
+        correct: 25
+      },
+       {
+        id:8,
+        math_example: '20 + 20 + 10 + 50 + 60 = ?',
+        math_options:[130,140,150,145,135],
+        correct: 140
+      },
+       {
+        id:9,
+        math_example: '30 + 15 + 25 + 30 + 15 = ?',
+        math_options:[125,130,115,140,123],
+        correct: 115
+      },
+       {
+        id:10,
+        math_example: '15 + 10 + 15 + 20 + 30 = ?',
+        math_options:[80,90,85,90,95],
+        correct: 90
+      }
+    ]
+  },
+  {
     level: 1,
     data:[
       {
@@ -328,6 +393,10 @@ var mathTest = [
 
 var colorTest = [
   {
+    'name_color': ['hnedá','zelená','modrá','červená','oranžová'],
+    'font_color': ['red','green','blue', 'brown', 'orange']
+  },
+  {
     'name_color': ['červená','modrá','zelená','hnedá','čierna'],
     'font_color': ['red','green','blue', 'brown', 'black']
   },
@@ -397,25 +466,30 @@ function runSecondPart() {
            document.getElementById('math_example').style.color = color.font_color[colorLevel];
            startReactionTime = new Date().getTime();
       },getTimeForReaction());
-
       
     }
   
 }
+
 function getTimeForReaction() {
   switch(level) {
-    case 1:
-        return 4000;
-    case 2:
+    case 0:
         return 5000;
-    case 3:
-        return 10000;
-    case 4:
+    case 1:
+        return 8000;
+    case 2:
         return 13000;
+    case 3:
+        return 17000;
+    case 4:
+        return 19000;
     case 5:
-        return 15000;
+        return 20000;
+    default:
+        return 10000;
   }
 }
+
 function answerReaction(id) {
   var reactionTime = new Date().getTime() - startReactionTime;
    if(id == 0) {
@@ -435,16 +509,12 @@ function answerReaction(id) {
    // colorLevel = 0;
    // example = 0;
   }
-  if(iteration != 5) {
+  if(iteration != 6) {
     runSecondPart();
   }
   else {
     stopSecondPart();
   }
-}
-
-function test() {
-
 }
 
 function answerMath(id) {
@@ -467,9 +537,7 @@ function answerMath(id) {
 
   if(example == 10) {
    example = 0;
-  } 
-
-  
+  }   
   runSecondPart();
 }
 

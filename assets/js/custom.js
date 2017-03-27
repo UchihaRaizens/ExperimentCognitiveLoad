@@ -5,7 +5,7 @@ var wordsTest = [
   },
   {
     'input': ['jablko','vlak','hruška','zajac','pero'],
-    'output': ['jablko','pero','kôň','luster','vlak','hruška','skrutka','kniha','zajac','vlasy']
+    'output': ['jablko','pero','kôň','luster','vlak','hruška','skrutka','kniha','zajac','flaša']
   },
   {
     'input': ['stolička','kakao','plechovka','stôl','mikina'],
@@ -17,7 +17,7 @@ var wordsTest = [
   },
   {
     'input': ['futbal','zmrzlina','obal','tenis','lyžička'],
-    'output': ['lyžička','para','futbal','poduška','hokej','zmrzlina','oliva','obal','disketa','tenis']
+    'output': ['lyžička','para','futbal','poduška','jahoda','zmrzlina','oliva','obal','disketa','tenis']
   },
 ];
 
