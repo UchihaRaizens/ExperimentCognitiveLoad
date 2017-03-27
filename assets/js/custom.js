@@ -65,7 +65,8 @@ var testSentence = {
         correct: 'peňazí'
       }
     ]
-}
+  }
+
 
 var sentences = [
   {
@@ -286,6 +287,8 @@ function timer(level) {
         return 10000;
     case 5:
         return 14000;
+    default:
+        return 10000;
   }
 }
 
@@ -360,6 +363,7 @@ function show() {
   sentence_group = sentences[group];
 
   document.getElementById('options').style.display = "none";
+  document.getElementById('sentence').style.display = "none";
   document.getElementById('hidden_sentence').style.display = "none";
   document.getElementById('secundary_task').style.display = "none";
   document.getElementById('word').innerHTML = word;
@@ -377,9 +381,9 @@ function show() {
     document.getElementById('sentence').style.display = "none";
     document.getElementById('hidden_sentence').innerHTML = sentence_group.data[sentence].hidden_sentence;
     document.getElementById('hidden_sentence').style.display = "block";
-    document.getElementById(('option_0')).innerHTML = sentence_group.data[sentence].options[0];
-    document.getElementById(('option_1')).innerHTML = sentence_group.data[sentence].options[1];
-    document.getElementById(('option_2')).innerHTML = sentence_group.data[sentence].options[2];
+    document.getElementById('option_0').innerHTML = sentence_group.data[sentence].options[0];
+    document.getElementById('option_1').innerHTML = sentence_group.data[sentence].options[1];
+    document.getElementById('option_2').innerHTML = sentence_group.data[sentence].options[2];
     document.getElementById('options').style.display = "block";
     sendEvent('options_level_' + sentence_group.level.toString() + '_id_' + sentence_group.data[sentence].id.toString());
   }, timer(sentence_group.level) + 2000);

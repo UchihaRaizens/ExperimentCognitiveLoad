@@ -200,62 +200,62 @@ var mathTest = [
       {
         id:1,
         math_example: '5 + 10 + 15 + 13 + 1 = ?',
-        math_options:[1,2,3,4],
-        correct: 4
+        math_options:[40,42,43,44,45],
+        correct: 44
       },
        {
         id:2,
-        math_example: '5 + 10 + 15 + 13 + 1 = ?',
-        math_options:[4,2,3,1],
-        correct: 3
+        math_example: '17+ 8 + 15 + 7 + 1 = ?',
+        math_options:[48,46,50,49,44],
+        correct: 48
       },
        {
         id:3,
-        math_example: '5 + 10 + 15 + 13 + 1 = ?',
-        math_options:[2,1,4,3],
-        correct: 3
+        math_example: '5 + 3 + 14 + 13 + 8 = ?',
+        math_options:[42,47,45,43,41],
+        correct: 43
       },
        {
         id:4,
-        math_example: '5 + 10 + 15 + 13 + 1 = ?',
-        math_options:[4,1,4,3],
-        correct: 3
+        math_example: '6 + 9 + 11 + 15 + 9 = ?',
+        math_options:[54,51,48,49,50],
+        correct: 50
       },
        {
         id:5,
-        math_example: '5 + 10 + 15 + 13 + 1 = ?',
-        math_options:[5,1,4,3],
-        correct: 3
+        math_example: '15 + 9 + 12 + 3 + 6 = ?',
+        math_options:[45,41,44,43,46],
+        correct: 45
       },
        {
         id:6,
-        math_example: '5 + 10 + 15 + 13 + 1 = ?',
-        math_options:[6,1,4,3],
-        correct: 3
+        math_example: '12 + 8 + 5 + 8 + 13 = ?',
+        math_options:[47,46,41,43,49],
+        correct: 46
       },
        {
         id:7,
-        math_example: '5 + 10 + 15 + 13 + 1 = ?',
-        math_options:[7,1,4,3],
-        correct: 3
+        math_example: '10 + 1 + 14 + 3 + 9 = ?',
+        math_options:[40,35,39,37,38],
+        correct: 37
       },
        {
         id:8,
-        math_example: '5 + 10 + 15 + 13 + 1 = ?',
-        math_options:[8,1,4,3],
-        correct: 3
+        math_example: '3 + 9 + 15 + 7 + 11 = ?',
+        math_options:[48,46,45,47,43],
+        correct: 45
       },
        {
         id:9,
-        math_example: '5 + 10 + 15 + 13 + 1 = ?',
-        math_options:[9,1,4,3],
-        correct: 3
+        math_example: '1 + 14 + 13 + 2 + 5  = ?',
+        math_options:[35,39,34,37,40],
+        correct: 35
       },
        {
         id:10,
-        math_example: '5 + 10 + 15 + 13 + 1 = ?',
-        math_options:[10,1,4,3],
-        correct: 3
+        math_example: '9 + 13 + 7 + 13 + 5 = ?',
+        math_options:[50,48,45,46,47],
+        correct: 47
       }
     ]
   },
@@ -264,63 +264,63 @@ var mathTest = [
     data:[
       {
         id:1,
-        math_example: '100 + 1 + 0 + 1 + 1 = ?',
-        math_options:[1,2,3,4],
-        correct: 4
+        math_example: '17 + 13 + 5 + 17 + 16 = ?',
+        math_options:[66,64,68,64,70],
+        correct: 68
       },
        {
         id:2,
-        math_example: '100 + 1 + 0 + 1 + 1 = ?',
-        math_options:[4,2,3,1],
-        correct: 3
+        math_example: '19 + 6 + 13 + 15 + 17 = ?',
+        math_options:[74,70,73,68,69],
+        correct: 70
       },
        {
         id:3,
-        math_example: '100 + 1 + 0 + 1 + 1 = ?',
-        math_options:[2,1,4,3],
-        correct: 3
+        math_example: '11 + 13 + 4 + 12 + 15 = ?',
+        math_options:[55,48,50,56,58],
+        correct: 55
       },
        {
         id:4,
-        math_example: '100 + 1 + 0 + 1 + 1 = ?',
-        math_options:[4,1,4,3],
-        correct: 3
+        math_example: '23 + 14 + 3 + 12 + 20 = ?',
+        math_options:[65,68,69,72,70],
+        correct: 72
       },
        {
         id:5,
-        math_example: '100 + 1 + 0 + 1 + 1 = ?',
-        math_options:[5,1,4,3],
-        correct: 3
+        math_example: '21 + 6 + 22 + 13 + 17 = ?',
+        math_options:[75,79,80,77,76],
+        correct: 79
       },
        {
         id:6,
-        math_example: '100 + 1 + 0 + 1 + 1 = ?',
-        math_options:[6,1,4,3],
-        correct: 3
+        math_example: '16 + 21 + 17 + 24 + 3 = ?',
+        math_options:[86,82,80,79,81],
+        correct: 81
       },
        {
         id:7,
-        math_example: '100 + 1 + 0 + 1 + 1 = ?',
-        math_options:[7,1,4,3],
-        correct: 3
+        math_example: '11 + 1 + 20 + 17 + 11 = ?',
+        math_options:[62,61,60,58,57],
+        correct: 60
       },
        {
         id:8,
-        math_example: '100 + 1 + 0 + 1 + 1 = ?',
-        math_options:[8,1,4,3],
-        correct: 3
+        math_example: '16 + 23 + 4 + 25 + 15 = ?',
+        math_options:[83,81,82,84,85],
+        correct: 83
       },
        {
         id:9,
-        math_example: '100 + 1 + 0 + 1 + 1 = ?',
-        math_options:[9,1,4,3],
-        correct: 3
+        math_example: '5 + 11 + 13 + 12 + 14 = ?',
+        math_options:[58,56,45,55,57],
+        correct: 55
       },
        {
         id:10,
-        math_example: '100 + 1 + 0 + 1 + 1 = ?',
-        math_options:[10,1,4,3],
-        correct: 3
+        math_example: '25 + 23 + 20 + 19 + 13 = ?',
+        math_options:[100,101,99,102,105],
+        correct: 100
       },
     ]
   }
@@ -396,13 +396,26 @@ function runSecondPart() {
            document.getElementById('math_example').style.display = "";
            document.getElementById('math_example').style.color = color.font_color[colorLevel];
            startReactionTime = new Date().getTime();
-      },5000);
+      },getTimeForReaction());
 
       
     }
   
 }
-
+function getTimeForReaction() {
+  switch(level) {
+    case 1:
+        return 4000;
+    case 2:
+        return 5000;
+    case 3:
+        return 10000;
+    case 4:
+        return 13000;
+    case 5:
+        return 15000;
+  }
+}
 function answerReaction(id) {
   var reactionTime = new Date().getTime() - startReactionTime;
    if(id == 0) {
