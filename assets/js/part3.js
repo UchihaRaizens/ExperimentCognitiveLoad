@@ -1,6 +1,6 @@
 var mathTest = [
   {
-    level: 6,
+    level: 0,
     data:[
       {
         id:1,
@@ -135,7 +135,7 @@ var mathTest = [
       {
         id:1,
         math_example: '1 + 2 + 3 + 4 + 5 = ?',
-        math_options:[10,12,13,15,17],
+        math_options:[27,12,13,15,17],
         correct: 15
       },
        {
@@ -200,7 +200,7 @@ var mathTest = [
       {
         id:1,
         math_example: '1 + 3 + 5 + 8 + 10 = ?',
-        math_options:[18,27,29,22,25],
+        math_options:[37,27,29,22,25],
         correct: 27
       },
        {
@@ -212,13 +212,13 @@ var mathTest = [
        {
         id:3,
         math_example: '10 + 3 + 5 + 6 + 10 = ?',
-        math_options:[30,31,29,34,37],
+        math_options:[30,31,44,34,37],
         correct: 34
       },
        {
         id:4,
         math_example: '6 + 7 + 3 + 8 + 2 = ?',
-        math_options:[28,30,29,27,26],
+        math_options:[28,16,29,27,26],
         correct: 26
       },
        {
@@ -230,7 +230,7 @@ var mathTest = [
        {
         id:6,
         math_example: '9 + 9 + 2 + 8 + 10 = ?',
-        math_options:[40,38,39,32,35],
+        math_options:[40,38,39,32,48],
         correct: 38
       },
        {
@@ -242,7 +242,7 @@ var mathTest = [
        {
         id:8,
         math_example: '9 + 10 + 9 + 8 + 10 = ?',
-        math_options:[42,44,46,48,47],
+        math_options:[34,44,46,48,36],
         correct: 46
       },
        {
@@ -254,7 +254,7 @@ var mathTest = [
        {
         id:10,
         math_example: '5 + 7 + 2 + 9 + 8 = ?',
-        math_options:[31,30,32,34,36],
+        math_options:[31,30,32,21,36],
         correct: 31
       }
     ]
@@ -265,13 +265,13 @@ var mathTest = [
       {
         id:1,
         math_example: '5 + 10 + 15 + 13 + 1 = ?',
-        math_options:[40,42,43,44,45],
+        math_options:[54,42,43,44,45],
         correct: 44
       },
        {
         id:2,
         math_example: '17+ 8 + 15 + 7 + 1 = ?',
-        math_options:[48,46,50,49,44],
+        math_options:[48,46,58,49,44],
         correct: 48
       },
        {
@@ -283,7 +283,7 @@ var mathTest = [
        {
         id:4,
         math_example: '6 + 9 + 11 + 15 + 9 = ?',
-        math_options:[54,51,48,49,50],
+        math_options:[54,51,60,49,50],
         correct: 50
       },
        {
@@ -295,13 +295,13 @@ var mathTest = [
        {
         id:6,
         math_example: '12 + 8 + 5 + 8 + 13 = ?',
-        math_options:[47,46,41,43,49],
+        math_options:[47,46,56,36,49],
         correct: 46
       },
        {
         id:7,
         math_example: '10 + 1 + 14 + 3 + 9 = ?',
-        math_options:[40,35,39,37,38],
+        math_options:[47,35,39,37,38],
         correct: 37
       },
        {
@@ -313,7 +313,7 @@ var mathTest = [
        {
         id:9,
         math_example: '1 + 14 + 13 + 2 + 5  = ?',
-        math_options:[35,39,34,37,40],
+        math_options:[35,39,45,37,25],
         correct: 35
       },
        {
@@ -330,7 +330,7 @@ var mathTest = [
       {
         id:1,
         math_example: '17 + 13 + 5 + 17 + 16 = ?',
-        math_options:[66,64,68,64,70],
+        math_options:[78,64,68,64,58],
         correct: 68
       },
        {
@@ -342,13 +342,13 @@ var mathTest = [
        {
         id:3,
         math_example: '11 + 13 + 4 + 12 + 15 = ?',
-        math_options:[55,48,50,56,58],
+        math_options:[55,48,50,65,58],
         correct: 55
       },
        {
         id:4,
         math_example: '23 + 14 + 3 + 12 + 20 = ?',
-        math_options:[65,68,69,72,70],
+        math_options:[65,62,69,72,78],
         correct: 72
       },
        {
@@ -360,19 +360,19 @@ var mathTest = [
        {
         id:6,
         math_example: '16 + 21 + 17 + 24 + 3 = ?',
-        math_options:[86,82,80,79,81],
+        math_options:[86,70,80,71,81],
         correct: 81
       },
        {
         id:7,
         math_example: '11 + 1 + 20 + 17 + 11 = ?',
-        math_options:[62,61,60,58,57],
+        math_options:[62,61,60,58,50],
         correct: 60
       },
        {
         id:8,
         math_example: '16 + 23 + 4 + 25 + 15 = ?',
-        math_options:[83,81,82,84,85],
+        math_options:[83,73,82,84,93],
         correct: 83
       },
        {
@@ -427,6 +427,7 @@ var colorLevel = 0;
 var iteration = 0;
 var isAnswer = 0;
 var isResult = 1;
+var points = 0;
 
 function runSecondPart() {
   //img = randomize(images)[0];
@@ -522,6 +523,7 @@ function answerMath(id) {
   isResult = 0;
   if (mathTest[level].data[example].correct == mathTest[level].data[example].math_options[id]) {
     sendEvent('OK');
+    points += 1 + level;
   } else {
     sendEvent('WRONG');
   }
@@ -541,8 +543,13 @@ function answerMath(id) {
   runSecondPart();
 }
 
+function getPointsSecond() {
+  var backlink = location.search.split('points=')[1];
+  document.getElementById('points').innerHTML = backlink;
+}
+
 function stopSecondPart() {
   setTimeout(function() {
-    window.location.href = "endPart2.html";
+    window.location.href = "endPart2.html?points=" + points;
   }, 1050);
 }
